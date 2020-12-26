@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapisy na szkolenie</title>
+</head>
+<body>
+    
+    <form action="https://formspree.io/f/meqpplge" method="POST">
+
+        <label for="imie">Imię:</label><br>
+        <input type="text" name="imie" id="imie"><br>
+    
+        <label for="nazwisko">Nazwisko:</label><br>
+        <input type="text" name="nazwisko" id="nazwisko"><br>
+    
+        <label for="mail">Mail:</label><br>
+        <input type="email" name="mail" id="mail"><br>
+
+        <label for="tel">Telefon:</label><br>
+        <input type="tel" name="tel" id="tel"><br><br>
+
+        <label>Miasto:<br>
+            <select name="miasto">
+                <option value="Krakow">Kraków</option> 
+                <option value="Warszawa" selected>Warszawa</option>
+                <option value="Gdansk">Gdańsk</option>
+            </select>
+        </label><br><br>
+
+        <label><input type="radio" name="plec">Kobieta</label><br>
+        <label><input type="radio" name="plec">Mężczyzna</label><br><br>
+
+        <label for="zgoda">Zgoda na dane osobowe:</label><br>
+        <input type="checkbox" name="zgoda" id="zgoda">Wyrażam zgodę<br><br>
+
+        <label for="wiadomosc">Wiadomość:</label><br>
+        <textarea maxlength="1000" name="wiadomosc" id="wiadomosc"></textarea><br>
+        
+        <input type="submit" value="Wyślij formularz">
+
+    </form>
+
+</body>
+</html>
