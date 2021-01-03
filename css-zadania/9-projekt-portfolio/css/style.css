@@ -254,5 +254,6 @@ footer {
         text-align: right;
         margin: 0;
         padding: 10px;
+        padding-right: 0px;
     }
 }
