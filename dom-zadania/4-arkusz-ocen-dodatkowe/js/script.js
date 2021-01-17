@@ -11,45 +11,47 @@ let srednia = document.getElementsByClassName("srednia");
 let oblicz = document.getElementById("oblicz");
 let uczniowie = document.getElementsByClassName("uczen");
 
+
+oblicz.addEventListener("click", obliczWszystko);
+
 function sredniaUcznia(idUcznia) {
     let oceny = document.getElementById("uczen" + idUcznia).querySelectorAll("[type=number]");
     let sum = 0;
     for (let ocena of oceny) {
         sum += parseFloat(ocena.value);
     }
-    return (sum / oceny.length);
+    return (sum / oceny.length).toFixed(2);
 };
 
-for (let i = 1; i <= uczniowie.length; i++) {
-    srednia[i].innerText = sredniaUcznia(i);
-    if (sredniaUcznia(i) >= 4.75) {
-        uczniowie[i].classList.add("green");
-    }
-    let przedmioty = document.getElementById("uczen" + i).querySelectorAll("[type=number]");
-    for (let j = 0; j < przedmioty.length; j++) {
-        if (przedmioty[j].value == 1) {
-            uczniowie[i].classList.add("red");
-        }
-        for (let k = 1; k < przedmioty.length; k++) {
-            if (zajeciaDodatkowe[i].value === "") {
+function obliczWszystko() {
+    for (let i = 1; i <= uczniowie.length; i++) {
+        let przedmioty = document.getElementById("uczen" + i).querySelectorAll("[type=number]");
+        for (let j = 0; j < przedmioty.length; j++) {
+            if (przedmioty[j].value == 1) {
+                uczniowie[i].classList.add("red");
             }
-            else if (zajeciaDodatkowe[i].value === przedmioty[j].className) {
-                przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
-                przedmioty[j].classList.add("yellow");
-            }
-            for (let x = 0; x < przedmioty.length; x++) {
-                if (zajeciaDodatkowe[i].value.split(", ")[x] == przedmioty[j].className) {
-                    if (przedmioty[j].value == 6) {
-                    } else {
-                        przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
-                        przedmioty[j].classList.add("pink");
+            for (let k = 1; k < przedmioty.length; k++) {
+                if (zajeciaDodatkowe[i].value === "") {
+                }
+                else if (zajeciaDodatkowe[i].value === przedmioty[j].className) {
+                    przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
+                    przedmioty[j].classList.add("yellow");
+                }
+                for (let x = 0; x < przedmioty.length; x++) {
+                    if (zajeciaDodatkowe[i].value.split(", ")[x] == przedmioty[j].className) {
+                        if (przedmioty[j].value == 6) {
+                        } else {
+                            przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
+                            przedmioty[j].classList.add("pink"); 
+                        }
                     }
                 }
             }
         }
+        srednia[i].innerText = sredniaUcznia(i);
+        if (sredniaUcznia(i) >= 4.75) {
+            uczniowie[i].classList.add("green");
+        }
     }
 };
 
-
-
-/*srednia liczy bez poprawionych ocen*/
