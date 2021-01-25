@@ -35,7 +35,7 @@ function obliczWszystko() {
                 }
                 else if (zajeciaDodatkowe[i].value === przedmioty[j].className) {
                     przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
-                    przedmioty[j].classList.add("yellow");
+                    // przedmioty[j].classList.add("yellow");
                 }
                 for (let x = 0; x < przedmioty.length; x++) {
                     if (zajeciaDodatkowe[i].value.split(", ")[x] == przedmioty[j].className) {
