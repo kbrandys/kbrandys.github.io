@@ -10,6 +10,7 @@ let getData = () => {
             let id = document.createElement("p");
             let title = document.createElement("p");
             let body = document.createElement("p");
+            let hr = document.createElement("hr");
 
             userId.innerText = "User ID: " + data.userId;
             id.innerText = "ID: " + data.id;
@@ -20,6 +21,7 @@ let getData = () => {
             document.body.appendChild(id);
             document.body.appendChild(title);
             document.body.appendChild(body);
+            document.body.appendChild(hr);
 
         })
 
