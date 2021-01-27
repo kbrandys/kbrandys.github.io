@@ -23,6 +23,38 @@ function sredniaUcznia(idUcznia) {
     return (sum / oceny.length).toFixed(2);
 };
 
+// function obliczWszystko() {
+//     for (let i = 1; i <= uczniowie.length; i++) {
+//         let przedmioty = document.getElementById("uczen" + i).querySelectorAll("[type=number]");
+//         for (let j = 0; j < przedmioty.length; j++) {
+//             if (przedmioty[j].value == 1) {
+//                 uczniowie[i].classList.add("red");
+//             }
+//             for (let k = 1; k < przedmioty.length; k++) {
+//                 if (zajeciaDodatkowe[i].value === "") {
+//                 }
+//                 else if (zajeciaDodatkowe[i].value === przedmioty[j].className) {
+//                     przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
+//                     przedmioty[j].classList.add("yellow");
+//                 }
+//                 for (let x = 0; x < przedmioty.length; x++) {
+//                     if (zajeciaDodatkowe[i].value.split(", ")[x] == przedmioty[j].className) {
+//                         if (przedmioty[j].value == 6) {
+//                         } else {
+//                             przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
+//                             przedmioty[j].classList.add("pink"); 
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         srednia[i].innerText = sredniaUcznia(i);
+//         if (sredniaUcznia(i) >= 4.75) {
+//             uczniowie[i].classList.add("green");
+//         }
+//     }
+// };
+
 function obliczWszystko() {
     for (let i = 1; i <= uczniowie.length; i++) {
         let przedmioty = document.getElementById("uczen" + i).querySelectorAll("[type=number]");
@@ -35,14 +67,14 @@ function obliczWszystko() {
                 }
                 else if (zajeciaDodatkowe[i].value === przedmioty[j].className) {
                     przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
-                    // przedmioty[j].classList.add("yellow");
+                    przedmioty[j].classList.add("dodatkowe");
                 }
                 for (let x = 0; x < przedmioty.length; x++) {
                     if (zajeciaDodatkowe[i].value.split(", ")[x] == przedmioty[j].className) {
                         if (przedmioty[j].value == 6) {
                         } else {
                             przedmioty[j].value = parseFloat(przedmioty[j].value) + 0.5;
-                            przedmioty[j].classList.add("pink"); 
+                            przedmioty[j].classList.add("dodatkowe2"); 
                         }
                     }
                 }
@@ -54,4 +86,3 @@ function obliczWszystko() {
         }
     }
 };
-
