@@ -1,0 +1,7 @@
+#preloader {
+    position: fixed;
+    left: 10px;
+    bottom: 0;
+    display: none;
+    width: 35px;
+}
