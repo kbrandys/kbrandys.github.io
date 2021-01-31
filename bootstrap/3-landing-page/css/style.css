@@ -1,0 +1,27 @@
+section,
+footer {
+    padding: 60px 0;
+}
+
+.showcase-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.rounded-circle {
+    max-width: 200px;
+}
+
+.call-to-action {
+    background-image: url(../img/slider-1.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+@media (max-width: 768px) {
+ 
+    .showcase-img {
+        height: 300px;
+    }
+   
+}
