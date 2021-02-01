@@ -1,3 +1,14 @@
 .accordion-button {
     color: orange;
 }
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+    color: gray;
+    text-decoration: underline;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
