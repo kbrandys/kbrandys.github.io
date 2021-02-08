@@ -1,0 +1,25 @@
+.about {
+    img {
+    width: 120px;
+    }
+    .muted-about {
+        text-transform: uppercase;
+        font-size: $main-font-size;
+        color: $secondary-color;
+        letter-spacing: 0.5px;
+    }
+
+    @media (min-width: $large){
+        width: 70%;
+        margin: 0 auto;
+    }
+    @media (max-width: $small){
+        width: 100%;
+        img {
+            width: 100px;
+        }
+        .container-large {
+            width: 90%;
+        }
+    }
+}

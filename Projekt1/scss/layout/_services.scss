@@ -1,0 +1,46 @@
+.services {
+  display: inline-flex;
+
+  .service-image {
+    // width: 25%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .service-icon {
+    position: absolute;
+    top: 0;
+    background-color: rgba(27, 164, 206, 0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: $color-white;
+    }
+
+    img {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .service-image:hover {
+    .service-icon {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: $small) {
+    display: grid;
+  }
+}

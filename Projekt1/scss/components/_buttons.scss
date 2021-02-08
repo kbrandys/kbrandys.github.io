@@ -1,0 +1,26 @@
+%btn {
+  border: 0;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: $main-font-size;
+  text-decoration: none;
+  border-radius: 25px;
+  }
+
+.btn-primary {
+  @extend %btn;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $button-color;
+  }
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $button-color;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
