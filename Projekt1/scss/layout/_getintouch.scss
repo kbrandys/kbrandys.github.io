@@ -1,0 +1,101 @@
+.getintouch {
+  background-color: $primary-color;
+
+  h2,
+  p {
+    color: $color-white;
+  }
+
+  h2 {
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  img {
+    width: 20px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  form {
+    padding: 0 30px;
+
+    button {
+      float: left;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+
+      border: 0;
+      border-bottom: 1px solid $color-white;
+      color: $color-white;
+      background-color: $primary-color;
+      text-transform: uppercase;
+      padding: 15px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+
+      &::-webkit-input-placeholder {
+        color: $color-white;
+      }
+      &::-moz-placeholder {
+        color: $color-white;
+      }
+      &:-ms-input-placeholder {
+        color: $color-white;
+      }
+      &:-moz-placeholder {
+        color: $color-white;
+      }
+
+      &.error {
+        border-bottom: 1px solid #f00;
+      }
+    }
+  }
+
+  .img-holder {
+    width: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-wrap: wrap;
+
+    & p {
+      text-align: left;
+    }
+
+    & a {
+      text-align: left;
+    }
+  }
+
+  .container-large {
+    padding: 40px;
+  }
+
+  .getintouch-33 {
+    width: 33%;
+  }
+
+  .getintouch-66 {
+    width: 66%;
+  }
+
+  @media (max-width: $small) {
+    .getintouch-33,
+    .getintouch-66 {
+      width: 100%;
+    }
+  }
+}

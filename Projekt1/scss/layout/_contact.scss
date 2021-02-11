@@ -1,0 +1,71 @@
+.contact {
+  @include flexbox;
+  justify-content: space-between;
+
+  .form-image {
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #form {
+    width: 60%;
+    background-color: $primary-color;
+    padding: 60px 200px 60px 60px;
+  }
+
+  .contact-errors {
+    color: red;
+
+    &.send {
+      color: $color-white;
+    }
+  }
+
+  .form-field {
+    border: 0;
+    border-bottom: 1px solid $color-white;
+    color: $color-white;
+    background-color: $primary-color;
+    text-transform: uppercase;
+    width: 49%;
+    padding: 15px;
+    margin-bottom: 30px;
+
+    &#contact-message {
+      width: 100%;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-white;
+    }
+    &::-moz-placeholder {
+      color: $color-white;
+    }
+    &:-ms-input-placeholder {
+      color: $color-white;
+    }
+    &:-moz-placeholder {
+      color: $color-white;
+    }
+
+    &.error {
+      border-bottom: 1px solid #f00;
+    }
+
+    @media (max-width: $small) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $small) {
+    .form-image {
+      display: none;
+    }
+
+    #form {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

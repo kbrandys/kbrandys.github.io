@@ -1,20 +1,32 @@
-.photo-box {
-  position: relative;
+.team {
+  padding-bottom: 100px;
 
-  .team-data {
-    width: 80%;
-    position: absolute;
-    bottom: -120px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: $color-white;
+    .photo-box {
+    position: relative;
 
-    &:hover {
-      padding-bottom: 40px;
-      margin: 0 auto;
-      box-shadow: 0 10px 40px #f0f0f0;
+    .team-data {
+      width: 80%;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: $color-white;
+
+      .social-links {
+        display: none;
+      }
+
+      &:hover {
+        top: 65%;
+        margin: 0 auto;
+        
+        box-shadow: 0 10px 40px #f0f0f0;
+
+        .social-links {
+          display: block;
+        }
+      }
     }
   }
 }
-

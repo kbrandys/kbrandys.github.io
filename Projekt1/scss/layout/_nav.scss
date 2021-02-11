@@ -2,9 +2,19 @@
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
+  position: fixed;
+  background-color: $color-white;
+  width: 100%;
+  z-index: 99;
 
-  .nav-logo img {
+  .container-large {
+    display: flex;
+    padding-bottom:0;
+  }
+
+  img {
     width: 60px;
+    height: fit-content;
   }
 
   .nav-ul {
@@ -31,12 +41,17 @@
 
   @media (max-width: $small) {
     width: 100%;
-    padding: 20px;
     line-height: 50px;
     justify-content: space-between;
+    padding-bottom: 10px;
+
+    .nav-hamburger {
+      margin-left: auto;
+    }
 
     .fas {
       display: flex;
+      line-height: 50px;
     }
 
     .nav-ul {
@@ -52,6 +67,7 @@
       right: 0;
       width: 80%;
       display: none;
+      box-shadow: 0 10px 50px #f0f0f0;
 
       &.opened {
         display: block;

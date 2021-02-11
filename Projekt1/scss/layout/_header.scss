@@ -1,5 +1,6 @@
 .header-main {
   display: flex;
+  padding-top: 150px;
 
   h1 {
     margin: 0;
@@ -28,6 +29,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 10000;
   }
 
   .container-50 {

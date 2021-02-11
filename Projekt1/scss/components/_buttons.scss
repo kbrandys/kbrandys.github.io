@@ -6,7 +6,7 @@
   font-size: $main-font-size;
   text-decoration: none;
   border-radius: 25px;
-  }
+}
 
 .btn-primary {
   @extend %btn;
@@ -17,10 +17,47 @@
 }
 
 .btn-secondary {
-    @extend %btn;
-    background-color: $button-color;
+  @extend %btn;
+  background-color: $button-color;
 
-    &:hover {
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.play {
+  color: $secondary-color;
+  text-decoration: none;
+
+  i {
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    i {
       background-color: $primary-color;
+      color: $color-white;
     }
   }
+}
+
+
+.btn-form {
+  @extend %btn;
+  background-color: $color-white;
+  color: $button-color;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $button-color;
+    color: $color-white;
+  }
+}
+
+

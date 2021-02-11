@@ -1,8 +1,9 @@
 .services {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 
   .service-image {
-    // width: 25%;
+    width: 25%;
     position: relative;
 
     img {
@@ -40,7 +41,16 @@
     }
   }
 
+  @media (max-width: $medium) {
+    .service-image {
+      width: 50%;
+    }
+  }
+
+
   @media (max-width: $small) {
-    display: grid;
+    .service-image {
+      width: 100%;
+    }
   }
 }

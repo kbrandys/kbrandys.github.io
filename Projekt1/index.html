@@ -21,26 +21,25 @@
 
 <body>
 
-    <nav class="main-nav container-large">
-        <div class="nav-logo">
+    <nav class="main-nav">
+        <div class="container-large">
             <img src="img/logo-txt.png" alt="Spa Center">
-        </div>
 
-        <div class="nav-menu">
-            <ul class="nav-ul">
-                <i class="fas fa-times"></i>
-                <li class="nav-li"><a class="nav-a" href="#home">Home</a></li>
-                <li class="nav-li"><a class="nav-a" href="#about">About</a></li>
-                <li class="nav-li"><a class="nav-a" href="#feature">Feature</a></li>
-                <li class="nav-li"><a class="nav-a" href="#service">Service</a></li>
-                <li class="nav-li"><a class="nav-a" href="#contact">Contact</a></li>
-            </ul>
-        </div>
+            <div class="nav-menu">
+                <ul class="nav-ul">
+                    <i class="fas fa-times"></i>
+                    <li class="nav-li"><a class="nav-a" href="#home">Home</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#about">About</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#feature">Feature</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#service">Service</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-        <div class="nav-hamburger">
-            <i class="fas fa-bars"></i>
+            <div class="nav-hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-
     </nav>
 
     <header class="header-main" id="home">
@@ -151,7 +150,8 @@
 
     <section class="team container-large">
         <h2>Experienced team</h2>
-        <p class="section-description container-large">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio deleniti delectus? Inventore quo aut excepturi tempore sit iure deleniti!</p>
+        <p class="section-description container-large">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio optio deleniti delectus? Inventore quo aut excepturi tempore sit iure deleniti!</p>
 
         <div class="row">
             <div class="col-3">
@@ -165,7 +165,7 @@
                             <a class="play" href=""><i class="fab fa-twitter"></i></a>
                             <a class="play" href=""><i class="fab fa-instagram"></i></a>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +180,7 @@
                             <a class="play" href=""><i class="fab fa-twitter"></i></a>
                             <a class="play" href=""><i class="fab fa-instagram"></i></a>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
 
@@ -195,7 +195,7 @@
                             <a class="play" href=""><i class="fab fa-twitter"></i></a>
                             <a class="play" href=""><i class="fab fa-instagram"></i></a>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,9 +203,131 @@
     </section>
 
 
+    <section id="contact" class="contact">
+
+        <div class="form-image" style="background-image: url(img/contact-bg.jpg);"></div>
+
+        <form id="form">
+            <input type="text" name="name" placeholder="Name" id="contact-name" class="form-field">
+            <input type="email" name="email" placeholder="Email" id="contact-email" class="form-field">
+            <select name="service" id="contact-service" class="form-field">
+                <option value="">Select service</option>
+                <option value="normal">Normal Service</option>
+                <option value="vip">VIP Serevice</option>
+            </select>
+
+            <input type="tel" name="phone" placeholder="Phone" id="contact-phone" class="form-field">
+            <input type="date" name="date" id="contact-date" class="form-field">
+            <input type="time" name="time" id="contact-time" class="form-field">
+
+            <textarea name="message" id="contact-message" placeholder="Your text" class="form-field"></textarea>
+            <button type="submit" class="btn-form">Make reservation</button>
+            <p class="contact-errors"></p>
+        </form>
+    </section>
 
 
+    <section class="blog container-large">
+        <h2>Lastest from Blog</h2>
+        <p class="section-description container-large">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Distinctio optio deleniti delectus? Inventore quo aut excepturi tempore sit iure deleniti!</p>
 
+        <div class="row">
+            <div class="col-3">
+                <div class="box">
+                    <img src="img/blog-1.jpg" alt="Blog1">
+                    <p class="blog-p">RELAXATION | JULY 03.2019</p>
+                    <h3>Massage Therapy</h3>
+                    <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, voluptates!</p>
+                    <a class="btn-secondary" href="">Read me</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="box">
+                    <img src="img/blog-2.jpg" alt="Blog2">
+                    <p class="blog-p">RELAXATION | JULY 03.2019</p>
+                    <h3>Massage Therapy</h3>
+                    <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, voluptates!</p>
+                    <a class="btn-secondary" href="">Read me</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="box">
+                    <img src="img/blog-3.jpg" alt="Blog3">
+                    <p class="blog-p">RELAXATION | JULY 03.2019</p>
+                    <h3>Massage Therapy</h3>
+                    <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus, voluptates!</p>
+                    <a class="btn-secondary" href="">Read me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="getintouch" class="getintouch">
+        <div class="container-large">
+            <h2>Get in touch</h2>
+            <p class="section-description container-large">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto autem
+                veritatis tempora ea itaque numquam?</p>
+
+            <div class="row">
+                <div class="getintouch-33">
+                    <div class="contact-item">
+                        <img src="img/icons/icon-map.png" alt="map">
+                        <p>848 E 28th ST, BROOKLYN <br> NEW YORK, USa</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="img/icons/icon-mail.png" alt="mail">
+                        <p>
+                            <a href="mailto:example@example.pl">example@example.pl</a><br>
+                            <a href="mailto:example@example.pl">example@example.pl</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="img/icons/icon-tel.png" alt="phone">
+                        <p>
+                            <span>+02 365 2365 3265 (02)</span><br>
+                            <span>+01 365 2365 3265 (04)</span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="getintouch-66">
+                    <form>
+                        <input type="text" placeholder="First name" name="name">
+                        <input type="email" placeholder="Email address" name="email">
+                        <textarea name="" placeholder="Write message"></textarea>
+                        <button class="btn-form">Submit now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container-large">
+
+        <img src="img/logo-txt.png" alt="Spa Center">
+
+        <div class="footer-menu">
+            <ul class="footer-ul">
+                <li class="footer-li"><a class="footer-a" href="#home">Home</a></li>
+                <li class="footer-li"><a class="footer-a" href="#about">About</a></li>
+                <li class="footer-li"><a class="footer-a" href="#feature">Feature</a></li>
+                <li class="footer-li"><a class="footer-a" href="#service">Service</a></li>
+                <li class="footer-li"><a class="footer-a" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">© COPYRIGHT 2020</p>
+    </footer>
 
 
     <script src="js/main.js"></script>
